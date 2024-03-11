@@ -1,14 +1,27 @@
-//
-//  main.cpp
-//  YazimHocaWeek2
-//
-//  Created by Mangtay on 11.03.2024.
-//
+#include"iostream"
+using namespace std;
 
-#include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+class Calculate{
+public:
+    double pi =3.14;
+    double R;
+    double H;
+    Calculate(double p, double r, double h){
+        pi =p;
+        R = r;
+        H=h;
+    }
+    void W(){
+        double volume =(pi*R*R*H);
+        cout <<volume;
+    }
+    
+};
+
+
+int main(){
+    Calculate(3.14, 4, 6).W();
+    
+    
 }
